@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="twitter:description" content="WinHacks is back! Join our public Discord server: http://discord.winhacks.ca">
+    <meta name="twitter:description" content="WinHacks is now over! Stay tuned for WinHacks 2023!">
     <meta name="twitter:title" content="WinHacks 2022">
     <meta property="og:image" content="assets/img/logo_dg.png">
-    <meta name="description" content="WinHacks is back! Join our public Discord server: http://discord.winhacks.ca">
+    <meta name="description" content="WinHacks is now over! Stay tuned for WinHacks 2023!">
     <meta property="og:type" content="website">
     <meta name="twitter:image" content="assets/img/logo_dg.png">
     <link rel="icon" type="image/png" sizes="2198x1658" href="assets/img/logo_dg.png">
@@ -65,7 +65,8 @@ p, h1, h2, h3, h4, a{
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
                         <h1 class="text-left brand-heading" style="margin-top: 25px;">WinHacks 2022</h1>
-                        <p class="text-left intro-text">WinHacks is Back! <a style="margin-left: 20px; font-weight: 700;" href="http://discord.winhacks.ca" class="btn btn-primary btn-lg">Join Now!</a><br></p>
+                        <p class="text-left intro-text">Thank you everyone for making WinHacks 2022 possible!<br></p>
+                        <!-- <p class="text-left intro-text">Thank you everyone for making WinHacks 2022 possible! <a style="margin-left: 20px; font-weight: 700;" href="http://discord.winhacks.ca" class="btn btn-primary btn-lg">Join Now!</a><br></p> -->
                         <p class="text-left intro-text"><i class="fa fa-calendar-times-o" style="margin-right: 16px;"></i>March 25-27, 2022<br></p>
                         <div>
     <style>
@@ -133,10 +134,10 @@ p, h1, h2, h3, h4, a{
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="demo"
-            document.getElementById('days').innerText = days;
-            document.getElementById('hours').innerText = hours;
-            document.getElementById('minutes').innerText = minutes;
-            document.getElementById('seconds').innerText = seconds;
+            document.getElementById('days').innerText = days > 0 ? days : "0";
+            document.getElementById('hours').innerText = hours > 0 ? hours : "0";
+            document.getElementById('minutes').innerText = minutes > 0 ? minutes : "0";
+            document.getElementById('seconds').innerText = seconds > 0 ? seconds : "0";
 
             // If the count down is finished, write some text
             if (distance < 0) {
