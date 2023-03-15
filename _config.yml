@@ -1,0 +1,6 @@
+theme: jekyll-theme-cayman
+title: WinHacks 2023
+description: Windsor's First Major Hackathon
+show_downloads: false
+github:
+  is_project_page: false
